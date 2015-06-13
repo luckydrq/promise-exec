@@ -18,6 +18,7 @@
   "email": "drqzju@gmail.com",
   "license": "MIT",
   "dependencies": {
+    "bluebird": "^2.9.27",
     "mz": "^2.0.0",
     "native-or-bluebird": "^1.2.0",
     "thenify": "^3.1.0"
