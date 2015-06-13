@@ -1,5 +1,6 @@
 'use strict';
 
+var fs = require('fs');
 var path = require('path');
 var assert = require('assert');
 var exec = require('..');
@@ -39,9 +40,12 @@ describe('exec promise', function() {
   });
 
   it('should exec a bash file successfully', function(done) {
-    execFile(path.join(__dirname, 'test.sh'))
-      .then(function(result) {
-        assert(result.length);
+    var file = path.join(__dirname, './test.sh');
+    execFile(file)
+      .then(function() {
+        var txt = path.join(__dirname, './index.txt');
+        assert(fs.existsSync(txt));
+        assert(fs.readFileSync(txt, { encoding: 'utf8' }) === 'hello\n');
         done();
       })
       .catch(function(err) {

@@ -54,18 +54,21 @@ echo "hello" > index.txt
 cat index.txt
 ```
 
-```javascrpt
+index.js:
+
+```javascript
 var fs = require('fs');
 var path = require('path');
 var execFile = require('promise-exec').execFile;
-var file = path.join('./test.sh');
+var file = path.join(__dirname, './test.sh');
 
 execFile(file)
   .then(function() {
-    console.log(fs.existsSync(file));  // true
+    var txt = path.join(__dirname, 'index.txt');
+    console.log(fs.existsSync(txt));  // true
 
-    var content = fs.readFileSync(file, { encoding: 'utf8' });
-    console.log(content);  // hello
+    var content = fs.readFileSync(txt, { encoding: 'utf8' });
+    console.log(content);  // hello\n
   })
   .catch(function(err) {
     console.error(err);
