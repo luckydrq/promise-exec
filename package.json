@@ -1,0 +1,26 @@
+{
+  "name": "promise-exec",
+  "version": "0.1.0",
+  "description": "make exec return promise",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "mocha test/*.js"
+  },
+  "keywords": [
+    "exec",
+    "promise"
+  ],
+  "author": "luckydrq",
+  "license": "MIT",
+  "dependencies": {
+    "mz": "^2.0.0",
+    "native-or-bluebird": "^1.2.0",
+    "thenify": "^3.1.0"
+  },
+  "devDependencies": {
+    "mocha": "^2.2.5"
+  }
+}
