@@ -1,7 +1,7 @@
 {
   "name": "promise-exec",
   "version": "0.1.0",
-  "description": "make exec return promise",
+  "description": "make child_process.exec return promise",
   "main": "index.js",
   "directories": {
     "test": "test"
@@ -11,9 +11,11 @@
   },
   "keywords": [
     "exec",
-    "promise"
+    "promise",
+    "child_process"
   ],
   "author": "luckydrq",
+  "email": "drqzju@gmail.com",
   "license": "MIT",
   "dependencies": {
     "mz": "^2.0.0",
@@ -22,5 +24,9 @@
   },
   "devDependencies": {
     "mocha": "^2.2.5"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:luckydrq/promise-exec.git"
   }
 }
