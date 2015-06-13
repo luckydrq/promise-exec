@@ -1,4 +1,4 @@
-![](https://travis-ci.org/luckydrq/promise-exec.svg)
+[![Build Status](https://travis-ci.org/luckydrq/promise-exec.png)](https://travis-ci.org/luckydrq/promise-exec)
 
 # promise-exec
 A simple wrap for child_process.exec which returns promise
