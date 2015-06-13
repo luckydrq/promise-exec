@@ -1,3 +1,5 @@
+![](https://api.travis-ci.org/luckydrq/promise-exec.svg)
+
 # promise-exec
 A simple wrap for child_process.exec which returns promise
 
