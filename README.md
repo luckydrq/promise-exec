@@ -1,6 +1,8 @@
-[![Build Status](https://travis-ci.org/luckydrq/promise-exec.png)](https://travis-ci.org/luckydrq/promise-exec)
-
 # promise-exec
+[![NPM version][npm-image]][npm-url]
+[![build status][travis-image]][travis-url]
+[![Test coverage][coveralls-image]][coveralls-url]
+
 A simple wrap for child_process.exec which returns promise
 
 ## Installation
@@ -15,7 +17,7 @@ $ npm install promise-exec
 
 It's a promise version of `child_process.exec`.
 
-```javascript
+```js
 var exec = require('promise-exec');
 
 exec('ls -al')
@@ -31,7 +33,7 @@ exec('ls -al')
 
 It's a sugar for subsequent thenable calls that makes code simpler and more elegant.
 
-```javascript
+```js
 var exec = require('promise-exec').wrap;
 
 Promise.resolve()
@@ -58,7 +60,7 @@ cat index.txt
 
 index.js:
 
-```javascript
+```js
 var fs = require('fs');
 var path = require('path');
 var execFile = require('promise-exec').execFile;
@@ -76,3 +78,13 @@ execFile(file)
     console.error(err);
   });
 ```
+
+## Lisence
+MIT
+
+[npm-image]: https://img.shields.io/npm/v/promise-exec.svg?style=flat-square
+[npm-url]: https://npmjs.org/package/promise-exec
+[travis-image]: https://img.shields.io/travis/luckydrq/promise-exec/master.svg?style=flat-square
+[travis-url]: https://travis-ci.org/luckydrq/promise-exec
+[coveralls-image]: https://img.shields.io/coveralls/luckydrq/promise-exec/master.svg?style=flat-square
+[coveralls-url]: https://coveralls.io/r/luckydrq/promise-exec?branch=master
