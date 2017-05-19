@@ -21,7 +21,7 @@
     "bluebird": "^3.1.1",
     "mz": "^2.0.0",
     "native-or-bluebird": "^1.2.0",
-    "thenify": "^3.1.0"
+    "thenify": "^3.3.0"
   },
   "devDependencies": {
     "mocha": "^3.0.0"
